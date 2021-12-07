@@ -20,6 +20,58 @@ public class Tesis extends Escrito{
 	public String interpretacion() {
 		return interpretacion;
 	}
+
+	public String getIdea() {
+		return idea;
+	}
+
+	public void setIdea(String idea) {
+		this.idea = idea;
+	}
+
+	public static String[] getArgumentos() {
+		return argumentos;
+	}
+
+	public static void setArgumentos(String[] argumentos) {
+		Tesis.argumentos = argumentos;
+	}
+
+	public String getConclusion() {
+		return conclusion;
+	}
+
+	public void setConclusion(String conclusion) {
+		this.conclusion = conclusion;
+	}
+
+	public String getReferencias() {
+		return referencias;
+	}
+
+	public void setReferencias(String referencias) {
+		this.referencias = referencias;
+	}
+
+	public String getInterpretacion() {
+		return interpretacion;
+	}
+
+	public void setInterpretacion(String interpretacion) {
+		this.interpretacion = interpretacion;
+	}
+	
+	@Override
+	int palabrasTotales(int palabrasPagina) {
+		return getPaginas()*palabrasPagina*5;
+	}
+	
+	@Override
+	public String toString() {
+		return getOrigen() + "\n" + getTitulo() + "\n" + getAutor() + "\n" 
+				+ getPaginas() + "\n" + idea + "\n" + getArgumentos().length 
+				+ "\n" + conclusion + "\n" + referencias + "\n" + interpretacion;
+	}
 	
 	
 	
