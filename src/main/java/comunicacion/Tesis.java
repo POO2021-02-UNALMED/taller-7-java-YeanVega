@@ -69,7 +69,7 @@ public class Tesis extends Escrito{
 	@Override
 	public String toString() {
 		return getOrigen() + "\n" + getTitulo() + "\n" + getAutor() + "\n" 
-				+ getPaginas() + "\n" + idea + "\n" + getArgumentos().length 
+				+ getPaginas() + "\n" + idea + "\n" + argumentos.length 
 				+ "\n" + conclusion + "\n" + referencias ;
 	}
 	
