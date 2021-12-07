@@ -49,7 +49,7 @@ public class Periodico extends Escrito{
 	@Override
 	public String toString() {
 		return getOrigen() + "\n" + getTitulo() + "\n" + getAutor() + "\n" 
-				+ getPaginas() + "\n" + fecha + "\n" + primicia + "\n" + interpretacion;
+				+ getPaginas() + "\n" + fecha + "\n" + primicia;
 	}
 	
 	
